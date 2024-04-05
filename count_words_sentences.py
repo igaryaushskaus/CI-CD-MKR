@@ -9,3 +9,8 @@ def count_words_sentences(file_path):
         sentences = [sentence for sentence in sentences if sentence.strip()]
         return len(words), len(sentences)
 
+if __name__ == "__main__":
+    file_path = "example.txt"
+    word_count, sentence_count = count_words_sentences(file_path)
+    print(f"Кількість слів: {word_count}")
+    print(f"Кількість речень: {sentence_count}")
